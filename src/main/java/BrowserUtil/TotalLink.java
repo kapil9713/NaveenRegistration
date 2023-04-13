@@ -14,7 +14,7 @@ public class TotalLink {
 	public static void main(String[] args) {
 		
 		driver=new ChromeDriver();
-		
+		driver.get("https:\\www.google.com");
 		driver.get("https:\\www.amazon.com");
 		
 		List<WebElement> totalLink = driver.findElements(By.tagName("a"));

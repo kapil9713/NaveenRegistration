@@ -13,6 +13,8 @@ public class ElementIsDisplayed {
 		
 		driver=new ChromeDriver();
 		
+		driver.get("https:\\www.google.com");
+		
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 		
 		 //driver.manage().window().maximize();

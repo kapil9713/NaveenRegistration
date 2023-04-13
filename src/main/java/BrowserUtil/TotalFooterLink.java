@@ -14,6 +14,9 @@ public class TotalFooterLink {
 	public static void main(String[] args) {
 		
 		driver=new ChromeDriver();
+		
+		driver.get("https:\\www.google.com"); 
+		
 		driver.get("http://www.amazon.com");
 		
 		List<WebElement> totalFooterLink = driver.findElements(By.xpath("//div[@id='navFooter']//div"));

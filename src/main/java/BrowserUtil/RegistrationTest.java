@@ -13,6 +13,8 @@ public class RegistrationTest {
 		BrowserUtility utility=new BrowserUtility();
 		WebDriver driver = utility.initDriver(browserName);
 		
+		utility.launchUrl("https://www.google.com");
+		
 		utility.launchUrl("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 		
 		
