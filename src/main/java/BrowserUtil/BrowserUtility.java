@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class BrowserUtility {
 
@@ -25,40 +27,46 @@ public class BrowserUtility {
 
 		case "Edge":
 			driver = new EdgeDriver();
-
 			break;
+
+		case "safari":
+			driver = new SafariDriver();
+			break;
+			
+		case "IE":
+			driver=new InternetExplorerDriver();
 
 		default:
 			break;
 		}
 		return driver;
 	}
-	
+
 	public void launchUrl(String url) {
-		if(url==null) {
+		if (url == null) {
 			System.out.println("cannot be null");
-			
+
 		}
-		if(url.indexOf("https")==0) {
+		if (url.indexOf("https") == 0) {
 			driver.get(url);
 		}
-		
+
 	}
-	
-	
+
 	public void getTitle() {
 		String title = driver.getTitle();
-		System.out.println("Title"+title);
+		System.out.println("Title" + title);
 	}
+
 	public void getCurrentUrl() {
 		String currentUrl = driver.getCurrentUrl();
-		System.out.println("currentUrl"+currentUrl);
+		System.out.println("currentUrl" + currentUrl);
 	}
+
 	public void closeBrowser() {
-		if(driver!=null) {
+		if (driver != null) {
 			driver.close();
 		}
 	}
-	
 
 }
