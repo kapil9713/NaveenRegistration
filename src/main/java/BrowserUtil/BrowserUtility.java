@@ -30,11 +30,12 @@ public class BrowserUtility {
 			break;
 
 		case "safari":
-			driver = new SafariDriver();
+			driver=new SafariDriver();
 			break;
 			
 		case "IE":
 			driver=new InternetExplorerDriver();
+			break;
 
 		default:
 			break;
