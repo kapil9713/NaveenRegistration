@@ -29,9 +29,7 @@ public class BrowserUtility {
 			driver = new EdgeDriver();
 			break;
 
-		case "safari":
-			driver=new SafariDriver();
-			break;
+		
 			
 		case "IE":
 			driver=new InternetExplorerDriver();
