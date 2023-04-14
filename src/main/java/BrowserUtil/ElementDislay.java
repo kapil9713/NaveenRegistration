@@ -13,7 +13,7 @@ public class ElementDislay {
 
 		driver = new ChromeDriver();
 		
-		driver.get("https:\\www.google.com");
+		driver.get("http:\\www.google.com");
 
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 
